@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portafolio - Arquitectura de Sistemas</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#eef2f3,#dfe9f3);
+color:#333;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#0d3b66,#1d3557);
+color:white;
+padding:30px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+header img{
+width:180px;
+height:auto;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:35px;
+margin-bottom:10px;
+}
+
+/* NAVBAR */
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:#1d3557;
+padding:15px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+/* SECCIONES */
+section{
+padding:40px;
+margin:30px auto;
+width:90%;
+max-width:1100px;
+background:white;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+section:hover{
+transform:translateY(-5px);
+}
+
+h2{
+color:#0d3b66;
+margin-bottom:20px;
+font-size:30px;
+border-left:6px solid #0d3b66;
+padding-left:10px;
+}
+
+h3{
+margin-top:20px;
+margin-bottom:10px;
+color:#1d3557;
+}
+
+/* PORTADA */
+.portada{
+text-align:center;
+}
+
+/* FOTOS */
+.fotos{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.fotos div{
+transition:.4s;
+}
+
+.fotos div:hover{
+transform:scale(1.08);
+}
+
+.fotos img{
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #0d3b66;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* IMAGENES GENERALES */
+img{
+max-width:100%;
+border-radius:12px;
+margin-top:20px;
+transition:.4s;
+}
+
+img:hover{
+transform:scale(1.02);
+}
+
+/* LISTAS */
+ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+li{
+margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+text-align:center;
+padding:25px;
+background:#0d3b66;
+color:white;
+font-size:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+section{
+padding:25px;
+}
+
+.fotos{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="imagenes/images .png" alt="Logo ITSE">
+<h1>Portafolio Académico</h1>
+<p>Arquitectura de Sistemas</p>
+</header>
+
+<nav>
+<a href="#portada">Inicio</a>
+<a href="#justificacion">Justificación</a>
+<a href="#objetivos">Objetivos</a>
+<a href="#evidencias">Evidencias</a>
+<a href="#actividades">Actividades</a>
+<a href="#evaluaciones">Evaluaciones</a>
+<a href="#reflexion">Reflexión</a>
+<a href="#conclusion">Conclusión</a>
+</nav>
+
+<section id="portada" class="portada">
+<h2>Presentación Grupal</h2>
+
+<div class="fotos">
+<div>
+<img src="./estudiante1.jpg">
+<p><b>Juan Castro</b></p>
+</div>
+
+<div>
+<img src="./estudiante2.jpg">
+<p><b>Joseph Pinzón</b></p>
+</div>
+</div>
+</section>
+
+<section id="justificacion">
+<h2>Justificación</h2>
+<p>
+Este portafolio recopila las evidencias de aprendizaje obtenidas durante el curso de Arquitectura de Sistemas, mostrando el desarrollo académico y práctico.
+</p>
+</section>
+
+<section id="objetivos">
+<h2>Objetivos</h2>
+
+<h3>Objetivo General</h3>
+<p>Demostrar los conocimientos adquiridos en la materia.</p>
+
+<h3>Objetivos Específicos</h3>
+<ul>
+<li>Comprender la arquitectura de sistemas</li>
+<li>Aplicar conocimientos en actividades</li>
+<li>Desarrollar habilidades técnicas</li>
+</ul>
+</section>
+
+<section id="evidencias">
+<h2>Evidencias de Aprendizaje</h2>
+
+<h3>Taller 1</h3>
+<img src="imagenes/taller1.png">
+
+<hr>
+
+<h3>Taller 2</h3>
+<img src="imagenes/taller2.png">
+
+<hr>
+
+<h3>Taller 3</h3>
+<img src="imagenes/taller3.png">
+
+<hr>
+
+<h3>Taller 4</h3>
+<img src="imagenes/taller4.png">
+
+<hr>
+
+<h3>Taller 5: Modelo FURPS</h3>
+<p>
+En este taller se aplicó el modelo FURPS para analizar los requerimientos de un sistema bancario digital.
+</p>
+<img src="imagenes/taller5.png">
+
+<hr>
+
+<h3>Taller 6: Arquitectura en Capas y SOA</h3>
+<p>
+En este taller se estudiaron los conceptos de arquitectura en capas, cliente-servidor y la importancia de SOA en empresas modernas.
+</p>
+<img src="imagenes/taller6.png">
+
+<hr>
+
+<h3>Taller 7: Desarrollo de Página Web</h3>
+<p>
+En este taller se desarrolló una página web aplicando diseño visual, estructura HTML, estilos CSS y organización de contenido digital moderno.
+</p>
+<img src="imagenes/taller7.png">
+
+</section>
+
+<section id="actividades">
+<h2>Actividades Prácticas</h2>
+<ul>
+<li>Desarrollo de talleres</li>
+<li>Análisis de sistemas</li>
+<li>Aplicación de conceptos</li>
+</ul>
+</section>
+
+<section id="evaluaciones">
+<h2>Evaluaciones</h2>
+
+<h3>Diagnóstica</h3>
+<p>Evaluación inicial del conocimiento.</p>
+
+<h3>Final</h3>
+<p>Evaluación del aprendizaje adquirido.</p>
+</section>
+
+<section id="reflexion">
+<h2>Reflexión Individual</h2>
+
+<h3>Juan Castro</h3>
+<p>
+Durante el desarrollo de la materia de Arquitectura de Sistemas adquirí conocimientos fundamentales sobre la estructura, organización y funcionamiento de los sistemas informáticos. Aprendí a identificar los diferentes tipos de arquitecturas, comprender la importancia de una correcta planificación tecnológica y analizar cómo interactúan los componentes de hardware y software dentro de un sistema. Esta materia fortaleció mi pensamiento analítico y mi capacidad para diseñar soluciones tecnológicas eficientes.
+</p>
+
+<h3>Joseph Pinzón</h3>
+<p>
+En esta materia logré ampliar mis conocimientos sobre la arquitectura de sistemas y su importancia dentro del desarrollo tecnológico actual. Aprendí a comprender cómo se diseñan, estructuran y organizan los sistemas informáticos para garantizar su eficiencia, escalabilidad y rendimiento. Además, pude desarrollar habilidades para analizar distintos modelos arquitectónicos y aplicar conceptos técnicos en actividades prácticas.
+</p>
+</section>
+
+<section id="conclusion">
+<h2>Conclusión</h2>
+
+<h3>Juan Castro</h3>
+<p>
+Como conclusión, la materia de Arquitectura de Sistemas fue de gran importancia para mi formación académica, ya que me permitió comprender mejor el diseño interno de los sistemas tecnológicos y la manera en que sus componentes trabajan de forma integrada. Los conocimientos adquiridos serán de gran utilidad en mi desarrollo profesional dentro del área tecnológica.
+</p>
+
+<h3>Joseph Pinzón</h3>
+<p>
+En conclusión, esta materia aportó significativamente a mi crecimiento académico y profesional, permitiéndome entender la relevancia de una buena arquitectura en el desarrollo y funcionamiento de los sistemas. Gracias a los conocimientos adquiridos, ahora tengo una visión más clara sobre la planificación, diseño y análisis de infraestructuras tecnológicas modernas.
+</p>
+</section>
+
+<footer>
+<p>© 2026 Portafolio Académico</p>
+</footer>
+
+</body>
+</html>
